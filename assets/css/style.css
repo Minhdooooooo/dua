@@ -14,10 +14,17 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Keep Material Symbols font for icons */
+/* Keep Material Symbols font for icons and prevent translation */
 .material-symbols-outlined,
 .material-icons {
     font-family: 'Material Symbols Outlined', 'Material Icons' !important;
+    /* Prevent Google Translate from translating icon names */
+    translate: none;
+}
+
+/* Class to prevent translation */
+.notranslate {
+    translate: none;
 }
 
 /* Smooth scrolling */
